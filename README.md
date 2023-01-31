@@ -1,2 +1,2 @@
 # handymarket
-Sample demo  Application
+Sample demo  Application Handy Market
