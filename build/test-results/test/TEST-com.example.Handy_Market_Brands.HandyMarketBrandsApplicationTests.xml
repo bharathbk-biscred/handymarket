@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.Handy_Market_Brands.HandyMarketBrandsApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-30T06:35:41" hostname="CSGBTPWS012" time="0.256">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.Handy_Market_Brands.HandyMarketBrandsApplicationTests" time="0.256"/>
+  <system-out><![CDATA[12:05:35.317 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [HandyMarketBrandsApplicationTests]: using SpringBootContextLoader
+12:05:35.325 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.Handy_Market_Brands.HandyMarketBrandsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:05:35.326 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.Handy_Market_Brands.HandyMarketBrandsApplicationTests]: HandyMarketBrandsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:05:35.364 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [HandyMarketBrandsApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+12:05:35.460 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\bharatbk\Downloads\Handy_Market_Brands\Handy_Market_Brands\build\classes\java\main\com\example\Handy_Market_Brands\HandyMarketBrandsApplication.class]
+12:05:35.462 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.Handy_Market_Brands.HandyMarketBrandsApplication for test class com.example.Handy_Market_Brands.HandyMarketBrandsApplicationTests
+12:05:35.627 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [HandyMarketBrandsApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+12:05:35.629 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [HandyMarketBrandsApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-01-30T12:05:36.049+05:30  INFO 21448 --- [    Test worker] c.e.H.HandyMarketBrandsApplicationTests  : Starting HandyMarketBrandsApplicationTests using Java 17.0.5 with PID 21448 (started by bharatbk in C:\Users\bharatbk\Downloads\Handy_Market_Brands\Handy_Market_Brands)
+2023-01-30T12:05:36.051+05:30  INFO 21448 --- [    Test worker] c.e.H.HandyMarketBrandsApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-30T12:05:36.909+05:30  INFO 21448 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-30T12:05:37.011+05:30  INFO 21448 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2023-01-30T12:05:37.672+05:30  INFO 21448 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-30T12:05:37.758+05:30  INFO 21448 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-30T12:05:38.104+05:30  WARN 21448 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-30T12:05:38.337+05:30  INFO 21448 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-30T12:05:38.799+05:30  INFO 21448 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58fbcb71
+2023-01-30T12:05:38.802+05:30  INFO 21448 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-30T12:05:38.827+05:30  INFO 21448 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-01-30T12:05:38.827+05:30  WARN 21448 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+Hibernate: alter table brand add constraint FKl4nho6pcolonifevfr3oktgk7 foreign key (e_id) references employee (id)
+Hibernate: alter table product add constraint FKs6cydsualtsrprvlf2bb3lcam foreign key (brand_id) references brand (id)
+Hibernate: alter table sell_product add constraint FKdvpgo0evjvjilajy1er9p4q6i foreign key (employee_id) references employee (id)
+Hibernate: alter table sell_product add constraint FKhgntlm6y1w1v74qwkxkp2ni13 foreign key (product_id) references product (id)
+2023-01-30T12:05:40.479+05:30  INFO 21448 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-30T12:05:40.503+05:30  INFO 21448 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-30T12:05:41.104+05:30  WARN 21448 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-30T12:05:41.643+05:30  INFO 21448 --- [    Test worker] c.e.H.HandyMarketBrandsApplicationTests  : Started HandyMarketBrandsApplicationTests in 5.927 seconds (process running for 7.639)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
